@@ -3,15 +3,25 @@
 <head>
     <title>My Linktree</title>
     <style>
+        /* Set the background color and font style */
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+        }
+
         /* Customize the container and link styles */
         .link-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-start;
             align-items: center;
             height: 100vh;
+            text-align: center;
+            margin-top: 20px;
         }
 
         .link {
+            display: block;
             padding: 10px 20px;
             margin: 10px;
             background-color: #f2f2f2;
@@ -24,21 +34,39 @@
         .link:hover {
             transform: scale(1.1);
         }
+
+        /* Customize the headline style */
+        .headline {
+            color: #f2f2f2;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Customize the TikTok video container */
+        .tiktok-container {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="link-container">
+        <h1 class="headline">Giant Bomb</h1>
+	<a class="link" href="https://www.twitch.tv/giantbomb">Twitch</a>
+	<a class="link" href="https://www.youtube.com/giantbomb">YouTube</a>
+	<a class="link" href="https://www.giantbomb.com">Our main site</a>
         <a class="link" href="https://www.instagram.com/giantbombdotcom">Instagram</a>
         <a class="link" href="https://twitter.com/giantbomb">Twitter</a>
-        <a class="link" href="https://www.example.com">Website</a>
+        
         <!-- Add more links as needed -->
     </div>
 
-    <div id="tiktok-container"></div>
+    <div id="tiktok-container" class="tiktok-container"></div>
 
     <script src="https://www.tiktok.com/embed.js" async></script>
     <script>
-        // Use TikTok's Embed API to load the latest videos from your account
+        // Use TikTok's Embed API to load the latest videos from the @therealgiantbomb account
         (function() {
             var container = document.getElementById('tiktok-container');
             var embed = new TikTok.Embed(container, {
