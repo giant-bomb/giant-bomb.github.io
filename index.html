@@ -7,6 +7,8 @@
         body {
             background-color: #000;
             font-family: Arial, sans-serif;
+            background-image: url("https://www.giantbomb.com/a/uploads/original/28/288354/3487678-gb_logo-bomb-knockout.png");
+            background-repeat: repeat;
         }
 
         /* Customize the container and link styles */
@@ -20,22 +22,6 @@
             margin-top: 20px;
         }
 
-        .link {
-            display: block;
-            padding: 10px 20px;
-            margin: 10px;
-            background-color: #f2f2f2;
-            color: #333;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
-
-        /* Add hover effect */
-        .link:hover {
-            transform: scale(1.1);
-        }
-
-        /* Customize the headline style */
         .headline {
             color: #f2f2f2;
             font-size: 24px;
@@ -48,22 +34,26 @@
             max-width: 500px;
             margin-top: 20px;
         }
+
+        /* Customize the image style */
+        .logo-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+        }
     </style>
 </head>
 <body>
- <!-- Insert your small photo here -->
-    <img src="https://www.giantbomb.com/a/uploads/original/28/288354/3487678-gb_logo-bomb-knockout.png" alt="Small Photo" style="display: block; margin: 0 auto; max-width: 200px;">
-
-
+    <!-- Insert your small photo here -->
+    <img src="https://www.giantbomb.com/a/uploads/original/28/288354/3487678-gb_logo-bomb-knockout.png" alt="Logo" class="logo-image">
 
     <div class="link-container">
         <h1 class="headline">Giant Bomb</h1>
-	<a class="link" href="https://www.twitch.tv/giantbomb">Twitch</a>
-	<a class="link" href="https://www.youtube.com/giantbomb">YouTube</a>
-	<a class="link" href="https://www.giantbomb.com">Our main site</a>
-        <a class="link" href="https://www.instagram.com/giantbombdotcom">Instagram</a>
-        <a class="link" href="https://twitter.com/giantbomb">Twitter</a>
-        
+        <a href="https://www.twitch.tv/giantbomb"><img src="path_to_twitch_image.png" alt="Twitch"></a>
+        <a href="https://www.youtube.com/giantbomb"><img src="path_to_youtube_image.png" alt="YouTube"></a>
+        <a href="https://www.giantbomb.com"><img src="path_to_main_site_image.png" alt="Main Site"></a>
+        <a href="https://www.instagram.com/giantbombdotcom"><img src="path_to_instagram_image.png" alt="Instagram"></a>
+        <a href="https://twitter.com/giantbomb"><img src="path_to_twitter_image.png" alt="Twitter"></a>
         <!-- Add more links as needed -->
     </div>
 
