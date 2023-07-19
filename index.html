@@ -9,6 +9,9 @@
             font-family: Arial, sans-serif;
             background-image: url("https://www.giantbomb.com/a/uploads/original/28/288354/3487678-gb_logo-bomb-knockout.png");
             background-repeat: repeat;
+            background-size: 200px;
+            background-position: center;
+            opacity: 0.15;
         }
 
         /* Customize the container and link styles */
@@ -44,8 +47,14 @@
 
         /* Resize the social media icons */
         .social-media-icon {
-            max-width: 300px;
-            max-height: 300px;
+            max-width: 100px;
+            max-height: 100px;
+            transition: transform 0.3s;
+        }
+
+        /* Add hover effect for the links */
+        .social-media-icon:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -60,7 +69,7 @@
         <a href="https://www.instagram.com/giantbombdotcom"><img src="https://www.giantbomb.com/a/uploads/original/28/288354/3487681-instagram.png" alt="Instagram" class="social-media-icon"></a>
         <a href="https://twitter.com/giantbomb"><img src="https://www.giantbomb.com/a/uploads/original/28/288354/3487684-twitter.png" alt="Twitter" class="social-media-icon"></a>
         <a href="https://www.tiktok.com/@therealgiantbomb"><img src="https://www.giantbomb.com/a/uploads/original/28/288354/3487682-tiktok.png" alt="TikTok" class="social-media-icon"></a>
-	 <a href="https://www.discord.gg/giantbomb"><img src="https://www.giantbomb.com/a/uploads/original/28/288354/3487680-discord.png" alt="TikTok" class="social-media-icon"></a>
+        <a href="https://www.discord.gg/giantbomb"><img src="https://www.giantbomb.com/a/uploads/original/28/288354/3487680-discord.png" alt="Discord" class="social-media-icon"></a>
         <!-- Add more links as needed -->
     </div>
 
