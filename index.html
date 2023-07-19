@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Giant Bomb</title>
+    <title>My Linktree</title>
     <style>
         /* Customize the container and link styles */
         .link-container {
@@ -33,5 +33,19 @@
         <a class="link" href="https://www.example.com">Website</a>
         <!-- Add more links as needed -->
     </div>
+
+    <div id="tiktok-container"></div>
+
+    <script src="https://www.tiktok.com/embed.js" async></script>
+    <script>
+        // Use TikTok's Embed API to load the latest videos from your account
+        (function() {
+            var container = document.getElementById('tiktok-container');
+            var embed = new TikTok.Embed(container, {
+                urls: ['https://www.tiktok.com/@your-tiktok-profile']
+            });
+            embed.load();
+        })();
+    </script>
 </body>
 </html>
