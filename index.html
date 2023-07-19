@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Linktree</title>
+    <title>Giant Bomb</title>
     <style>
-        /* Add your custom CSS styles here */
+        /* Customize the container and link styles */
+        .link-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .link {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #f2f2f2;
+            color: #333;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        /* Add hover effect */
+        .link:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
     <div class="link-container">
-        <a href="https://www.instagram.com/your-instagram-profile">Instagram</a>
-        <a href="https://twitter.com/your-twitter-profile">Twitter</a>
-        <a href="https://www.example.com">Website</a>
+        <a class="link" href="https://www.instagram.com/your-instagram-profile">Instagram</a>
+        <a class="link" href="https://twitter.com/your-twitter-profile">Twitter</a>
+        <a class="link" href="https://www.example.com">Website</a>
         <!-- Add more links as needed -->
     </div>
 </body>
